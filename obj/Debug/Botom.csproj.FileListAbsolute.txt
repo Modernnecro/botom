@@ -1,0 +1,76 @@
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Botom.exe.config
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\obj\Debug\Botom.csprojResolveAssemblyReference.cache
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Botom.exe
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Botom.pdb
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Discord.Net.Commands.dll
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Discord.Net.dll
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Newtonsoft.Json.dll
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.Concurrent.dll
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.dll
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\RestSharp.dll
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\WebSocket4Net.dll
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Newtonsoft.Json.xml
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.xml
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.Concurrent.xml
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\RestSharp.xml
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\obj\Debug\Botom.exe
+c:\users\jasper\documents\visual studio 2015\Projects\Botom\Botom\obj\Debug\Botom.pdb
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\help.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\muffin.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\muffin.gif
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\flareon.jpg
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\fliteon.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\furfrouhearts.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\littenF.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\Meowstic.gif
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\weavincineroar.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\happylitten.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\feedmore.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\Discord.Net.Audio.dll
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\torrabox.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\Mimikyuveelutions.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\PockyTia.jpg
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\eevee.jpg
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\skylitten.jpg
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\littencake.png
+C:\Users\Jasper\documents\visual studio 2015\Projects\Botom\Botom\bin\Debug\images\ausCute.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\ausCute.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\eevee.jpg
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\feedmore.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\flareon.jpg
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\fliteon.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\furfrouhearts.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\happylitten.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\help.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\littencake.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\littenF.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\Meowstic.gif
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\Mimikyuveelutions.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\muffin.gif
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\muffin.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\PockyTia.jpg
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\skylitten.jpg
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\torrabox.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\images\weavincineroar.png
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Botom.exe.config
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Botom.exe
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Botom.pdb
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Discord.Net.Audio.dll
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Discord.Net.Commands.dll
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Discord.Net.dll
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.dll
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\RestSharp.dll
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\WebSocket4Net.dll
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.xml
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\bin\Debug\RestSharp.xml
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\obj\Debug\Botom.csprojResolveAssemblyReference.cache
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\obj\Debug\Botom.exe
+C:\Users\rvema\Desktop\Andere\School\2016-2017\Projects\Botom\Botom\obj\Debug\Botom.pdb
