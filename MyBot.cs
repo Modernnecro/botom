@@ -764,8 +764,15 @@ namespace Botom
     /// <param name="e">Command arguments</param>
     private async void CommandHelp(CommandEventArgs e)
     {
-      Command nextCmd = commands.AllCommands.First((cmd) => cmd.Text.Equals(e.GetArg(0)));
-      await commands.ShowCommandHelp(nextCmd, e.User, e.Channel);
+      try
+      {
+        Command nextCmd = commands.AllCommands.First((cmd) => cmd.Text.Equals(e.GetArg(0)));
+        await commands.ShowCommandHelp(nextCmd, e.User, e.Channel);
+      }
+      catch
+      {
+        await e.Channel.SendMessage(string.Format("<@{0}>, that command doesn't exist :-(", e.User));
+      }
     }
 
     /// <summary>
