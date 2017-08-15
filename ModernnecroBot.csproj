@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Botom</RootNamespace>
     <AssemblyName>ModernnecroBot</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Discord.Net, Version=0.9.6.0, Culture=neutral, processorArchitecture=MSIL">
@@ -80,13 +83,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="packages\Discord.Net.0.9.6\Discord.Net.0.9.6.nupkg" />
-    <None Include="packages\Discord.Net.Commands.0.9.6\Discord.Net.Commands.0.9.6.nupkg" />
-    <None Include="packages\Newtonsoft.Json.8.0.3\Newtonsoft.Json.8.0.3.nupkg" />
-    <None Include="packages\Newtonsoft.Json.8.0.3\tools\install.ps1" />
-    <None Include="packages\Nito.AsyncEx.3.0.1\Nito.AsyncEx.3.0.1.nupkg" />
-    <None Include="packages\RestSharp.105.2.3\RestSharp.105.2.3.nupkg" />
-    <None Include="packages\WebSocket4Net.0.14.1\WebSocket4Net.0.14.1.nupkg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\ausCute.png">
@@ -143,132 +139,6 @@
     <Content Include="images\weavincineroar.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="packages\Discord.Net.0.9.6\lib\net45\Discord.Net.dll" />
-    <Content Include="packages\Discord.Net.0.9.6\lib\netstandard1.3\Discord.Net.dll" />
-    <Content Include="packages\Discord.Net.Commands.0.9.6\lib\net45\Discord.Net.Commands.dll" />
-    <Content Include="packages\Discord.Net.Commands.0.9.6\lib\netstandard1.3\Discord.Net.Commands.dll" />
-    <Content Include="packages\Discord.Net.Commands.0.9.6\lib\netstandard1.3\Discord.Net.Commands.xml" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\net20\Newtonsoft.Json.dll" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\net20\Newtonsoft.Json.xml" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\net35\Newtonsoft.Json.dll" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\net35\Newtonsoft.Json.xml" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\net40\Newtonsoft.Json.dll" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\net40\Newtonsoft.Json.xml" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.xml" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.xml" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll" />
-    <Content Include="packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\MonoAndroid\Nito.AsyncEx.Concurrent.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\MonoAndroid\Nito.AsyncEx.Concurrent.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\MonoAndroid\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\MonoAndroid\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\MonoAndroid\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\MonoAndroid\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net40\Nito.AsyncEx.Concurrent.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net40\Nito.AsyncEx.Concurrent.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net40\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net40\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net40\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net40\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Concurrent.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Concurrent.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\netcore45\Nito.AsyncEx.Concurrent.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\netcore45\Nito.AsyncEx.Concurrent.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\netcore45\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\netcore45\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\netcore45\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\netcore45\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net40+netcore45+sl4+wp71\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net40+netcore45+sl4+wp71\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net40+netcore45+sl5+wp8+wpa81\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net40+netcore45+sl5+wp8+wpa81\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net40+netcore45\Nito.AsyncEx.Concurrent.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net40+netcore45\Nito.AsyncEx.Concurrent.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net40+netcore45\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net40+netcore45\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net45+netcore45+wp8+wpa81\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net45+netcore45+wp8+wpa81\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net45+netcore45+wpa81\Nito.AsyncEx.Concurrent.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net45+netcore45+wpa81\Nito.AsyncEx.Concurrent.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net45+netcore45+wpa81\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\portable-net45+netcore45+wpa81\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\sl4\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\sl4\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\sl4\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\sl4\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\sl5\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\sl5\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\sl5\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\sl5\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wp71\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wp71\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wp71\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wp71\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wp8\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wp8\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wp8\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wp8\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wpa81\Nito.AsyncEx.Concurrent.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wpa81\Nito.AsyncEx.Concurrent.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wpa81\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wpa81\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wpa81\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\wpa81\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.iOS10\Nito.AsyncEx.Concurrent.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.iOS10\Nito.AsyncEx.Concurrent.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.iOS10\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.iOS10\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.iOS10\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.iOS10\Nito.AsyncEx.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.Mac20\Nito.AsyncEx.Concurrent.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.Mac20\Nito.AsyncEx.Concurrent.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.Mac20\Nito.AsyncEx.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.Mac20\Nito.AsyncEx.Enlightenment.dll" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.Mac20\Nito.AsyncEx.Enlightenment.xml" />
-    <Content Include="packages\Nito.AsyncEx.3.0.1\lib\Xamarin.Mac20\Nito.AsyncEx.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\MonoAndroid10\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\MonoAndroid10\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\MonoTouch10\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\MonoTouch10\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net35\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net35\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net4-client\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net4-client\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net451\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net451\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net452\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net452\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net45\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net45\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net46\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net46\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net4\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\net4\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\sl5\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\sl5\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\windowsphone81\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\windowsphone81\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\windowsphone8\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\windowsphone8\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\lib\Xamarin.iOS10\RestSharp.dll" />
-    <Content Include="packages\RestSharp.105.2.3\lib\Xamarin.iOS10\RestSharp.xml" />
-    <Content Include="packages\RestSharp.105.2.3\readme.txt" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\monoandroid23\WebSocket4Net.dll" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\monotouch10\WebSocket4Net.dll" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\net20\WebSocket4Net.dll" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\net35\WebSocket4Net.dll" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\net40\WebSocket4Net.dll" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\net45\WebSocket4Net.dll" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\sl40\WebSocket4Net.dll" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\sl50-wp\WebSocket4Net.dll" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\sl50\WebSocket4Net.dll" />
-    <Content Include="packages\WebSocket4Net.0.14.1\lib\Xamarin.iOS10\WebSocket4Net.dll" />
     <Content Include="token.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

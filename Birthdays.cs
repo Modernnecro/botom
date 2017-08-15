@@ -29,7 +29,7 @@ namespace Botom
     [JsonProperty("Day")]
     public int Day
     {
-      get => day;
+      get { return day; }
       set
       {
         // Validate setting the value.
@@ -46,7 +46,7 @@ namespace Botom
     [JsonProperty("Month")]
     public int Month
     {
-      get => month;
+      get { return month; }
       set
       {
         if (value > 12 || value <= 0)
@@ -62,8 +62,10 @@ namespace Botom
     /// <param name="a">Left oprand.</param>
     /// <param name="b">Right oprand.</param>
     /// <returns>True if equal, false otherwise.</returns>
-    public static bool operator ==(Birthday a, Birthday b) =>
-      a.day == b.day && a.month == b.month;
+    public static bool operator ==(Birthday a, Birthday b)
+    {
+      return a.day == b.day && a.month == b.month;
+    }
 
     /// <summary>
     /// Inequality operator that compares two birthdays. (Must be defined if we
@@ -72,8 +74,10 @@ namespace Botom
     /// <param name="a">Left oprand.</param>
     /// <param name="b">Right oprand.</param>
     /// <returns>True if inequal, false otherwise.</returns>
-    public static bool operator !=(Birthday a, Birthday b) =>
-      !(a == b);
+    public static bool operator !=(Birthday a, Birthday b)
+    {
+      return !(a == b);
+    }
 
     /// <summary>
     /// Compares a birthday to a datetime object.
@@ -81,8 +85,10 @@ namespace Botom
     /// <param name="a">The birthday</param>
     /// <param name="b">The date time</param>
     /// <returns>True if a == b</returns>
-    public static bool operator ==(Birthday a, DateTime b) =>
-      a.day == b.Day && a.month == b.Month;
+    public static bool operator ==(Birthday a, DateTime b)
+    {
+      return a.day == b.Day && a.month == b.Month;
+    }
 
     /// <summary>
     /// Compares a birthday to a datetime object.
@@ -90,8 +96,10 @@ namespace Botom
     /// <param name="a">The birthday</param>
     /// <param name="b">The date time</param>
     /// <returns>True if a != b</returns>
-    public static bool operator !=(Birthday a, DateTime b) =>
-      !(a == b);
+    public static bool operator !=(Birthday a, DateTime b)
+    {
+      return !(a == b);
+    }
 
     /// <summary>
     /// Gets the birthday as a string.
@@ -151,7 +159,8 @@ namespace Botom
 
       var doesBirthdayExist = birthdays.Exists(
         //(birthday) => birthday.UserName.Equals(userName)
-        (birthday) => {
+        (birthday) =>
+        {
           var equals = birthday.UserName.Equals(userName);
           Console.WriteLine("Comparing birthday {0} {1} to username {2}",
             birthday.UserName,
@@ -185,65 +194,65 @@ namespace Botom
       return JsonConvert.DeserializeObject<List<Birthday>>(jsonContents);
     }
 
-        /// <summary>
-        /// Adds, or, if it already exists, updates the data for the birthday for the given
-        /// user.
-        /// </summary>
-        /// <param name="newBirthday">The new birthday to add.</param>
-        /// <exception cref="IOException">If we cannot read the file.</exception>
-        /// <summary>
-        /// Adds, or, if it already exists, updates the data for the birthday for the given
-        /// user.
-        /// </summary>
-        /// <param name="newBirthday">The new birthday to add.</param>
-        /// <exception cref="IOException">If we cannot read the file.</exception>
-        public static void AddOrUpdateBirthday(Birthday newBirthday)
+    /// <summary>
+    /// Adds, or, if it already exists, updates the data for the birthday for the given
+    /// user.
+    /// </summary>
+    /// <param name="newBirthday">The new birthday to add.</param>
+    /// <exception cref="IOException">If we cannot read the file.</exception>
+    /// <summary>
+    /// Adds, or, if it already exists, updates the data for the birthday for the given
+    /// user.
+    /// </summary>
+    /// <param name="newBirthday">The new birthday to add.</param>
+    /// <exception cref="IOException">If we cannot read the file.</exception>
+    public static void AddOrUpdateBirthday(Birthday newBirthday)
+    {
+      List<Birthday> existingData;
+
+      // Write an empty list to the file if it doesn't exist.
+      if (!File.Exists(BIRTHDAY_JSON_FILE))
+      {
+        Console.WriteLine("Creating a new birthday file.");
+        using (FileStream fs = File.Create(BIRTHDAY_JSON_FILE))
         {
-            List<Birthday> existingData;
-
-            // Write an empty list to the file if it doesn't exist.
-            if (!File.Exists(BIRTHDAY_JSON_FILE))
-            {
-                Console.WriteLine("Creating a new birthday file.");
-                using (FileStream fs = File.Create(BIRTHDAY_JSON_FILE))
-                {
-                    var writer = new StreamWriter(fs);
-                    writer.WriteLine("[ ]");
-                    writer.Close();
-                }
-
-                existingData = new List<Birthday>();
-                existingData.Add(newBirthday);
-            }
-            else
-            {
-
-                // Read the existing data.
-                existingData = ReadBirthdays();
-
-                Console.WriteLine("Found {0} birthdays", existingData.Count);
-
-                var doesBirthdayAlreadyExist = existingData.Exists(
-                  (birthday) => birthday.UserName.Equals(newBirthday.UserName)
-                );
-
-                // If the user has already added their birthday, just update it.
-                if (doesBirthdayAlreadyExist)
-                {
-                    existingData.RemoveAll((birthday) =>
-                      birthday.UserName.Equals(newBirthday.UserName));
-
-
-                }
-                existingData.Add(newBirthday);
-            }
-
-            // Serialize back to file.
-            using (var writer = new StreamWriter(File.OpenWrite(BIRTHDAY_JSON_FILE)))
-            {
-                SERIALIZER.Serialize(writer, existingData);
-            }
+          var writer = new StreamWriter(fs);
+          writer.WriteLine("[ ]");
+          writer.Close();
         }
+
+        existingData = new List<Birthday>();
+        existingData.Add(newBirthday);
+      }
+      else
+      {
+
+        // Read the existing data.
+        existingData = ReadBirthdays();
+
+        Console.WriteLine("Found {0} birthdays", existingData.Count);
+
+        var doesBirthdayAlreadyExist = existingData.Exists(
+          (birthday) => birthday.UserName.Equals(newBirthday.UserName)
+        );
+
+        // If the user has already added their birthday, just update it.
+        if (doesBirthdayAlreadyExist)
+        {
+          existingData.RemoveAll((birthday) =>
+            birthday.UserName.Equals(newBirthday.UserName));
+
+
+        }
+        existingData.Add(newBirthday);
+      }
+
+      // Serialize back to file.
+      using (var writer = new StreamWriter(File.OpenWrite(BIRTHDAY_JSON_FILE)))
+      {
+        SERIALIZER.Serialize(writer, existingData);
+      }
     }
   }
+}
 

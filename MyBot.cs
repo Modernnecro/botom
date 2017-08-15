@@ -5,7 +5,7 @@ using Discord.Commands;
 using System.Text;
 
 // Injects each of the otherbitsofdata stuff with all your
-// massive arrays in, into this namespace, so I don't have to alter
+// massive arrays in, varo this namespace, so I don't have to alter
 // any code.
 // :hackerman:
 using static Botom.OtherBitsOfData;
@@ -67,7 +67,7 @@ namespace Botom
 
             AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionHandler;
 
-            // Prints any error we get. If we do get an error, then we will
+            // Prvars any error we get. If we do get an error, then we will
             // just disconnect and reconnect.
             while (true)
             {
@@ -94,7 +94,7 @@ namespace Botom
         {
             const string FILENAME = "token.txt";
 
-            string token = string.Empty;
+            var token = string.Empty;
 
             using (StreamReader sr = File.OpenText(FILENAME))
             {
@@ -233,7 +233,7 @@ namespace Botom
             commands.CreateCommand("muffin")
                     .Alias("muffinG")
                     .Description("Mmmmm... foood...")
-                    .Do(new Action<CommandEventArgs>(MuffinTime));
+                    .Do(new Action<CommandEventArgs>(Muffvarime));
 
             commands.CreateCommand("mission")
                    .Description("Generates a random mission objective")
@@ -354,8 +354,8 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void RandomPoke(CommandEventArgs e)
         {
-            int rand = r.Next(randompoke.Length);
-            string randmon = randompoke[rand];
+            var rand = r.Next(randompoke.Length);
+            var randmon = randompoke[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
         }
@@ -366,8 +366,8 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void RandomStarter(CommandEventArgs e)
         {
-            int rand = r.Next(randomstart.Length);
-            string randmon = randomstart[rand];
+            var rand = r.Next(randomstart.Length);
+            var randmon = randomstart[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
         }
@@ -378,8 +378,8 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void RandomRegion(CommandEventArgs e)
         {
-            int rand = r.Next(randomregion.Length);
-            string randmon = randomregion[rand];
+            var rand = r.Next(randomregion.Length);
+            var randmon = randomregion[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
         }
@@ -390,8 +390,8 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void RandomKa(CommandEventArgs e)
         {
-            int rand = r.Next(randomKa.Length);
-            string randmon = randomKa[rand];
+            var rand = r.Next(randomKa.Length);
+            var randmon = randomKa[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
         }
@@ -403,8 +403,8 @@ namespace Botom
         private async void RandomJo(CommandEventArgs e)
         {
 
-            int rand = r.Next(randomJo.Length);
-            string randmon = randomJo[rand];
+            var rand = r.Next(randomJo.Length);
+            var randmon = randomJo[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
 
@@ -416,8 +416,8 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void RandomHo(CommandEventArgs e)
         {
-            int rand = r.Next(randomHo.Length);
-            string randmon = randomHo[rand];
+            var rand = r.Next(randomHo.Length);
+            var randmon = randomHo[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
 
@@ -429,8 +429,8 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void RandomSi(CommandEventArgs e)
         {
-            int rand = r.Next(randomSi.Length);
-            string randmon = randomSi[rand];
+            var rand = r.Next(randomSi.Length);
+            var randmon = randomSi[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
         }
@@ -441,8 +441,8 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void RandomUn(CommandEventArgs e)
         {
-            int rand = r.Next(randomUn.Length);
-            string randmon = randomUn[rand];
+            var rand = r.Next(randomUn.Length);
+            var randmon = randomUn[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
         }
@@ -453,8 +453,8 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void RandomKl(CommandEventArgs e)
         {
-            int rand = r.Next(randomKl.Length);
-            string randmon = randomKl[rand];
+            var rand = r.Next(randomKl.Length);
+            var randmon = randomKl[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
         }
@@ -465,14 +465,14 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void RandomAl(CommandEventArgs e)
         {
-            int rand = r.Next(randomAl.Length);
-            string randmon = randomAl[rand];
+            var rand = r.Next(randomAl.Length);
+            var randmon = randomAl[rand];
             await e.Channel.SendMessage(randmon);
             Console.WriteLine(randmon);
         }
 
         /// <summary>
-        /// Prints out birthdays.
+        /// Prvars out birthdays.
         /// </summary>
         /// <param name="e">Event arguments.</param>
         private async void Birthdays(CommandEventArgs e)
@@ -522,8 +522,8 @@ namespace Botom
         /// <param name="e">Event arguments.</param>
         private async void ThrowItem(CommandEventArgs e)
         {
-            int rand = r.Next(items.Length);
-            string randmon = items[rand];
+            var rand = r.Next(items.Length);
+            var randmon = items[rand];
             await e.Channel.SendMessage("*Throws " + randmon + ".*");
             Console.WriteLine(randmon);
         }
@@ -534,14 +534,14 @@ namespace Botom
         /// <param name="e">Event arguments.</param>
         private async void Quest(CommandEventArgs e)
         {
-            int rand = r.Next(dungeons.GetLength(0));
-            string loc = dungeons[rand, 0];
-            string bf = dungeons[rand, 2];
-            int maxlev = Convert.ToInt32(dungeons[rand, 1]);
-            string poke = "";
-            string item = "";
-            string quest = "";
-            int lev = r.Next(maxlev);
+            var rand = r.Next(dungeons.GetLength(0));
+            var loc = dungeons[rand, 0];
+            var bf = dungeons[rand, 2];
+            var maxlev = Convert.ToInt32(dungeons[rand, 1]);
+            var poke = "";
+            var item = "";
+            var quest = "";
+            var lev = r.Next(maxlev);
 
 
             if (lev == 0)
@@ -549,27 +549,27 @@ namespace Botom
                 lev = 1;
             }
 
-            int rand2 = r.Next(3) + 1;
-            string mission = "";
+            var rand2 = r.Next(3) + 1;
+            var mission = "";
 
             if (rand2 == 1)
             {
                 mission = "Rescue ";
-                int som = r.Next(items.Length);
+                var som = r.Next(items.Length);
                 poke = randompoke[som];
                 quest = "Mission in " + loc + " at level " + bf + lev + ".  " + mission + poke + ".";
             }
             else if (rand2 == 2)
             {
                 mission = "Get ";
-                int som = r.Next(items.Length);
+                var som = r.Next(items.Length);
                 item = items[som];
                 quest = "Mission in " + loc + " at level " + bf + lev + ".  " + mission + item + ".";
             }
             else if (rand2 == 3)
             {
                 mission = "Fight ";
-                int som = r.Next(items.Length);
+                var som = r.Next(items.Length);
                 poke = randompoke[som];
                 quest = "Mission in " + loc + " at level " + bf + lev + ".  " + mission + poke + ".";
             }
@@ -584,11 +584,11 @@ namespace Botom
         /// <param name="e">Event arguments.</param>
         private async void Location(CommandEventArgs e)
         {
-            int rand = r.Next(dungeons.GetLength(0));
-            string loc = dungeons[rand, 0];
-            string bf = dungeons[rand, 2];
-            int maxlev = Convert.ToInt32(dungeons[rand, 1]);
-            int lev = r.Next(maxlev);
+            var rand = r.Next(dungeons.GetLength(0));
+            var loc = dungeons[rand, 0];
+            var bf = dungeons[rand, 2];
+            var maxlev = Convert.ToInt32(dungeons[rand, 1]);
+            var lev = r.Next(maxlev);
             if (lev == 0)
             {
                 lev = 1;
@@ -603,29 +603,29 @@ namespace Botom
         /// <param name="e">Event arguments</param>
         private async void Mission(CommandEventArgs e)
         {
-            int rand3 = r.Next(3) + 1;
-            string mission = "";
+            var rand3 = r.Next(3) + 1;
+            var mission = "";
 
             if (rand3 == 1)
             {
                 mission = "Rescue ";
-                int som = r.Next(items.Length);
-                string randmon = randompoke[som];
+                var som = r.Next(items.Length);
+                var randmon = randompoke[som];
                 await e.Channel.SendMessage(mission + randmon + ".");
 
             }
             else if (rand3 == 2)
             {
                 mission = "Get ";
-                int som = r.Next(items.Length);
-                string randmon = items[som];
+                var som = r.Next(items.Length);
+                var randmon = items[som];
                 await e.Channel.SendMessage(mission + randmon + ".");
             }
             else if (rand3 == 3)
             {
                 mission = "Fight ";
-                int som = r.Next(items.Length);
-                string randmon = randompoke[som];
+                var som = r.Next(items.Length);
+                var randmon = randompoke[som];
                 await e.Channel.SendMessage(mission + randmon + ".");
             }
         }
@@ -636,20 +636,20 @@ namespace Botom
         /// <param name="e">Event arguments.</param>
         private async void FeedMike(CommandEventArgs e)
         {
-            int rand = r.Next(feedMike.Length);
-            string randmon = feedMike[rand];
+            var rand = r.Next(feedMike.Length);
+            var randmon = feedMike[rand];
             await e.Channel.SendMessage("*Puts " + randmon + " in front of " + e.User.Mention + ".*");
             Console.WriteLine(randmon);
         }
 
         /// <summary>
-        /// Prints a random fact.
+        /// Prvars a random fact.
         /// </summary>
         /// <param name="e">Event arguments.</param>
         private async void Facts(CommandEventArgs e)
         {
-            int rand = r.Next(facts.Length);
-            string randmon = facts[rand];
+            var rand = r.Next(facts.Length);
+            var randmon = facts[rand];
             await e.Channel.SendMessage("Captain Here.  " + randmon + "       *flies away* ");
             Console.WriteLine(randmon);
         }
@@ -681,9 +681,9 @@ namespace Botom
                 .Description("Picks a random picture")
                 .Do(async (e) =>
                 {
-                  int rand = r.Next(randomPics.Length);
-                  string randmon = randomPics[rand];
-                  string stuff = "images/" + randmon;
+                  var rand = r.Next(randomPics.Length);
+                  var randmon = randomPics[rand];
+                  var stuff = "images/" + randmon;
                   await e.Channel.SendFile(stuff);
                   Console.WriteLine(randmon);
                 });
@@ -692,7 +692,7 @@ namespace Botom
                 .Description("Finds a picture of flareon")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "flareon.jpg";
+                  var stuff = "images/" + "flareon.jpg";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -708,7 +708,7 @@ namespace Botom
                 .Description("Shows us an Eevee")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "eevee.jpg";
+                  var stuff = "images/" + "eevee.jpg";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -716,7 +716,7 @@ namespace Botom
                 .Description("Shows us a \"Sky Litten\"(?)")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "skylitten.jpg";
+                  var stuff = "images/" + "skylitten.jpg";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -725,7 +725,7 @@ namespace Botom
                 .Alias("Pocky", "PockyTia")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "PockyTia.jpg";
+                  var stuff = "images/" + "PockyTia.jpg";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -733,7 +733,7 @@ namespace Botom
                 .Description("Shows us a torrabox")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "torrabox.png";
+                  var stuff = "images/" + "torrabox.png";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -741,7 +741,7 @@ namespace Botom
                 .Description("Shows us a litten cake")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "littencake.png";
+                  var stuff = "images/" + "littencake.png";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -750,7 +750,7 @@ namespace Botom
                 .Alias("Meeveelutions", "Meevee", "MimikyuEevee")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "Mimikyuveelutions.png";
+                  var stuff = "images/" + "Mimikyuveelutions.png";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -758,7 +758,7 @@ namespace Botom
                 .Description("MOAAARRRR FOOOOD!")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "feedmore.png";
+                  var stuff = "images/" + "feedmore.png";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -766,7 +766,7 @@ namespace Botom
                 .Description("Shows a happy litten")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "happylitten.png";
+                  var stuff = "images/" + "happylitten.png";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -774,7 +774,7 @@ namespace Botom
                 .Description("Shows a Flareon and Litten")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "fliteon.png";
+                  var stuff = "images/" + "fliteon.png";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -782,7 +782,7 @@ namespace Botom
                 .Description("Shows a Furfrou with hearts")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "furfrouhearts.png";
+                  var stuff = "images/" + "furfrouhearts.png";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -790,7 +790,7 @@ namespace Botom
                 .Description("Fat litten")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "littenF.png";
+                  var stuff = "images/" + "littenF.png";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -798,7 +798,7 @@ namespace Botom
                 .Description("Meowstic")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "Meowstic.gif";
+                  var stuff = "images/" + "Meowstic.gif";
                   await e.Channel.SendFile(stuff);
                 });
 
@@ -806,18 +806,18 @@ namespace Botom
                 .Description("Weaveroar!")
                 .Do(async (e) =>
                 {
-                  string stuff = "images/" + "weavincineroar.png";
+                  var stuff = "images/" + "weavincineroar.png";
                   await e.Channel.SendFile(stuff);
                 });
             */
         }
 
         /// <summary>
-        /// Prints stuff about muffins? :P
+        /// Prvars stuff about muffins? :P
         /// </summary>
-        private async void MuffinTime(CommandEventArgs e)
+        private async void Muffvarime(CommandEventArgs e)
         {
-            await e.Channel.SendMessage("It's muffintime!!");
+            await e.Channel.SendMessage("It's muffvarime!!");
             if (e.Command.Text.EndsWith("G"))
                 await e.Channel.SendFile("images/muffin.gif");
             else
