@@ -1,0 +1,16 @@
+# Place this in /etc/systemd/system
+# then run
+# systemctl daemon-reload
+# systemctl start botom.service
+[Unit]
+Description=Botom Discord Bot Daemon
+
+[Service]
+Type=simple
+PIDFile=/var/run/botom.pid
+ExecStart=/bin/bash /home/discorduser/botom/bin/mono/botom.exe
+Restart=always
+User=discorduser
+
+[Install]
+WantedBy=multi-user.target
