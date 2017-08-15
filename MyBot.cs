@@ -3,7 +3,6 @@ using System.Linq;
 using Discord;
 using Discord.Commands;
 using System.Text;
-
 // Injects each of the otherbitsofdata stuff with all your
 // massive arrays in, varo this namespace, so I don't have to alter
 // any code.
