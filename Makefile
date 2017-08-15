@@ -27,6 +27,9 @@ build: packages
 	cp -a images ./bin/mono/images -v
 	cp token.txt ./bin/mono/token.txt -v
 	csc $$(find -name '*.cs') /r:$$(for f in `find -name '*.dll'`; do printf "$$f;"; done) /out:bin/mono/botom.exe
+	cp run.sh bin/mono/run.sh
+	chmod 777 bin/mono/run.sh
+	chmod 777 bin/mono/botom.exe
 
 packages:
 	nuget.exe restore

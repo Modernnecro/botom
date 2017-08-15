@@ -91,11 +91,9 @@ namespace Botom
         /// </summary>
         private void Connect()
         {
-            const string FILENAME = "token.txt";
-
             var token = string.Empty;
 
-            using (StreamReader sr = File.OpenText(FILENAME))
+            using (StreamReader sr = File.OpenText("token.txt"))
             {
                 token = sr.ReadLine();
             }

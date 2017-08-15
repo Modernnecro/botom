@@ -8,7 +8,8 @@ Description=Botom Discord Bot Daemon
 [Service]
 Type=simple
 PIDFile=/var/run/botom.pid
-ExecStart=/bin/bash /home/discorduser/botom/bin/mono/botom.exe
+WorkingDirectory=/home/discorduser/botom/bin/mono
+ExecStart=/bin/bash /home/discorduser/botom/bin/mono/run.sh
 Restart=always
 User=discorduser
 
