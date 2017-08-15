@@ -1,0 +1,8 @@
+token.txt
+bin
+obj
+*.swp
+.vs
+*.csproj.user
+Packages
+packages
