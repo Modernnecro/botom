@@ -923,8 +923,8 @@ namespace Botom
             // Mention with nickname rather than the ID, as the id will yield @invalid-user once
             // said user has left, so we can't then refer to them with a valid identifier.
             // Issue #1 PR #3
-            var user = e.User.Nickname;
-            await channel.SendMessage(string.Format("Oh no! @{0} has left!! :sob:", user));
+            var user = e.User;
+            await channel.SendMessage(string.Format("Oh no! @{0} has left!! :sob:", user.Name));
         }
 
         /// <summary>
